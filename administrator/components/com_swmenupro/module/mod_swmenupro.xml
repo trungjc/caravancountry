@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" method="upgrade" client="site">
+	<name>swMenuPro</name>
+	<author>Sean White</author>
+	<creationDate>APR 2013</creationDate>
+	<copyright>Copyright (C) 2010-2011 Sean White. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>sean@swmenupro.com</authorEmail>
+	<authorUrl>http://swmenupro.com</authorUrl>
+	<version>9.7</version>
+
+    <files>
+        <filename module="mod_swmenupro">mod_swmenupro.php</filename>
+        <filename>mod_swmenupro.xml</filename>
+      
+        <filename>DropDownMenuX.js</filename>
+        <filename>DropDownMenuX_Packed.js</filename>
+        <filename>DropDownMenuX2.js</filename>
+	<filename>cufon-yui.js</filename>
+        <filename>curvycorners.js</filename>
+        <filename>curvycorners.src.js</filename>
+        <filename>functions.php</filename>
+        <filename>ie5.js</filename>
+        <filename>ie5_Packed.js</filename>
+	<filename>ddaccordion.js</filename>
+        <filename>fix_wmode2transparent_swf.js</filename>
+	<filename>hoverIntent.js</filename>
+        <filename>jquery-1.6.min.js</filename>
+        <filename>jquery.cookie.js</filename>
+        <filename>jquery.corner.js</filename>
+        <filename>dtree.js</filename>
+        <filename>dtree_Packed.js</filename>
+        <filename>jquery.tooltip.js</filename>
+        <filename>jquery.treeview.js</filename>
+        <filename>jquery.selectboxit.js</filename>
+        <filename>jquery.multiselect.js</filename>
+        <filename>jquery.jec-1.3.4.js</filename>
+	<filename>jquery.tooltip.css</filename>
+        <filename>jquery-ui.min2.js</filename>
+        <filename>styles.php</filename>
+	<filename>superfish.js</filename>
+        <filename>supersubs.js</filename>
+        <filename>transmenu.js</filename>
+        <filename>transmenu_Packed.js</filename>
+		   
+		   <folder>images</folder>
+			<folder>fonts</folder>
+			<folder>styles</folder>
+    </files>
+	<config>
+      <fields name="params">
+         
+         <fieldset
+            name="basic">
+            
+            <field
+               name="moduleclass_sfx"
+               type="text"
+               label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+               description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+            <field
+               name="cache"
+               type="list"
+               default="1"
+               label="COM_MODULES_FIELD_CACHING_LABEL"
+               description="COM_MODULES_FIELD_CACHING_DESC">
+               <option
+                  value="1">JGLOBAL_USE_GLOBAL</option>
+               <option
+                  value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+            </field>
+
+            <field
+               name="cache_time"
+               type="text"
+               default="900"
+               label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+               description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+            <field
+               name="cachemode"
+               type="hidden"
+               default="static">
+               <option
+                  value="static"></option>
+            </field>
+         </fieldset>
+      </fields>
+   </config>
+</extension>

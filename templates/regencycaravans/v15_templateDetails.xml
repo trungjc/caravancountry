@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://dev.joomla.org/xml/1.5/template-install.dtd">
+
+<install version="1.5" type="template">
+
+	<name>Regency Caravans</name>
+	<creationDate>05/05/2011</creationDate>
+	<author>Earthlink Design</author>
+	<authorEmail>info@earthlinkdesign.com.au</authorEmail>
+	<authorUrl>http://www.earthlinkdesign.com.au</authorUrl>
+	<copyright>Regency Caravans</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0.0</version>
+	<description>Regency Caravans, Joomla 1.5 custom template </description>
+
+	<files>
+		<filename>css/template_css.css</filename>
+		<filename>css/style_css.css</filename>
+		<filename>css/editor.css</filename>
+		<filename>css/firefox_css.css</filename>
+		<filename>css/safari_css.css</filename>
+		<filename>css/ie8_css.css</filename>
+		<filename>css/ie7_css.css</filename>
+		<filename>css/ie9_css.css</filename>
+		<filename>index.php</filename>
+		<filename>images/clear.gif</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+
+	<positions>
+		<position>Top-Title</position>
+		<position>Top-Menu</position>
+		<position>Top-Banner</position>
+		<position>Top-Menu</position>
+		<position>Top-Featured</position>
+		<position>Footer-Bottom</position>
+	</positions>
+
+	<params>
+		<param>parameter</param>
+	</params>
+	
+</install>
+
+

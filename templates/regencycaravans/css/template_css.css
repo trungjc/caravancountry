@@ -1,0 +1,140 @@
+/* Structural Template CSS */
+
+#Top-Container{
+position:relative; top:0px; left:0px;
+visibility:visible; display:block; float:none; clear:none;
+margin:0px auto 0px auto; padding:0px 0px 0px 0px;
+width:100%; max-width:1200px; min-width:980px; overflow:hidden;
+border:0px none; outline:0px none; z-index:1;
+background:transparent url() no-repeat left top;
+}
+
+#Background-Container{
+position:relative; top:0px; left:0px;
+visibility:visible; display:block; float:none; clear:none;
+margin:0px 0px 0px 0px; padding:0px 0px 0px 0px;
+width:100%; max-width:1200px; min-width:980px; overflow:visible;
+border:0px none; outline:0px none; z-index:2;
+background:transparent url() no-repeat left top;
+}
+
+#Top-Background{
+position:absolute; top:0px; left:0px;
+visibility:visible; display:block; float:none; clear:none;
+margin:0px 0px 0px 0px; padding:0px 0px 0px 0px;
+height:100%; width:100%; max-width:1200px; min-width:980px; overflow:visible;
+border:0px none; outline:0px none; z-index:1;
+background:transparent url(../images/background.jpg) no-repeat left top;
+}
+
+#Top-Title{
+position:relative; top:0px; left:0px;
+visibility:visible; display:block; float:none; clear:none;
+margin:0px auto 0px auto; padding:25px 0px 25px 0px;
+width:960px; height:110px; overflow:visible;
+border:0px none; outline:0px none; z-index:2;
+background:transparent url() no-repeat left top;
+}
+
+#Container-MenuBanner{
+position:relative; top:0px; left:0px;
+visibility:visible; display:block; float:none; clear:none;
+margin:0px 0px 0px 0px; padding:0px 0px 0px 0px;
+width:auto; height:auto; overflow:visible;
+border:0px none; outline:0px none; z-index:2;
+background:transparent url() no-repeat left top;
+}
+
+#Top-Banner{
+position:relative; top:0px; left:0px;
+visibility:visible; display:block; float:none; clear:none;
+margin:1px auto 36px auto; padding:0px 0px 0px 0px;
+width:960px; height:auto; overflow:visible;
+border:0px none; outline:0px none; z-index:2;
+background:transparent url() no-repeat left top;
+}
+
+#Top-Menu{
+position:relative; top:-14px; left:0px;
+visibility:visible; display:block; float:none; clear:none;
+margin:0px 0px 0px 0px; padding:0px 0px 0px 0px;
+width:auto; height:auto; overflow:visible;
+border:0px none; outline:0px none; z-index:3;
+background:transparent url() no-repeat left top;
+}
+
+#Top-Spacer{
+position:relative; top:0px; left:0px;
+visibility:visible; display:block; float:none; clear:none;
+margin:0px 0px 0px 0px; padding:0px 0px 0px 0px;
+width:100%; height:5px; overflow:visible;
+border:0px none; outline:0px none; z-index:2;
+background:#ffb900 url() no-repeat left top;
+}
+
+#Top-Featured{
+position:relative; top:0px; left:0px; text-align:center;
+visibility:visible; display:block; float:none; clear:none;
+margin:0px auto 0px auto; padding:0px 0px 0px 0px;
+min-width:960px; max-width:1200px; height:auto; overflow:visible;
+border-bottom:5px solid #1b0f3a; outline:0px none; z-index:2;
+background:transparent url("../images/black-trans-30.png") repeat left top;
+}
+
+#Content-Container{
+position:relative; top:0px; left:0px;
+visibility:visible; display:block; float:none; clear:none;
+margin:0px auto 0px auto; padding:0px 0px 0px 0px;
+width:100%; max-width:1200px; min-width:980px; overflow:visible;
+border:0px none; outline:0px none; z-index:1;
+background:#533d8b url(../images/content-loop.png) repeat-x left top;
+}
+
+#Main-Container{
+position:relative; top:0px; left:0px;
+visibility:visible; display:block; /*float:left;*/ clear:none;
+margin:0px auto 0px auto; padding:0px 0px 10px 0px;
+width:100%; max-width:1200px; min-width:980px; overflow:visible;
+border:0px none; outline:0px none; z-index:2;
+background:url("../images/content-loop.png") repeat-x scroll left top #533D8B; 
+}
+
+#Main-Content{
+position:relative; top:0px; left:0px;
+visibility:visible; display:block; float:none; clear:none;
+margin:0px auto 0px auto; padding:10px 0px 0px 0px;
+width:960px; height:auto; overflow:visible;
+border:0px none; outline:0px none; z-index:3;
+background:transparent url() no-repeat left top;
+color:#ffffff;
+}
+
+#Footer-Container{
+position:relative; top:0px; left:0px;
+visibility:visible; display:block; float:none; clear:none;
+margin:0px auto 0px auto; padding:0px 0px 0px 0px;
+width:auto; height:100px; overflow:visible;
+border-top:5px solid #3b2968; z-index:1;
+width:100%; max-width:1200px; min-width:980px; 
+background:transparent url() no-repeat left top;
+}
+
+#Bottom-Container{
+position:relative; top:0px; left:0px;
+visibility:visible; display:block; float:none; clear:none;
+margin:0px 0px 0px 0px; padding:0px 0px 0px 0px;
+width:100%; max-width:1200px; min-width:980px; overflow:visible;
+border:0px none; outline:0px none; z-index:2;
+background:transparent url() no-repeat left top;
+}
+
+#Footer-Bottom{
+position:relative; top:0px; left:0px;
+visibility:visible; display:block; float:none; clear:none;
+margin:0px auto 0px auto; padding:0px 0px 0px 0px;
+width:960px; height:auto; overflow:visible;
+border:0px none; outline:0px none; z-index:3;
+background:transparent url() no-repeat left top;
+}
+
+.expautos_modimg_table {float: right; margin-top: -211px; margin-right:22px;}

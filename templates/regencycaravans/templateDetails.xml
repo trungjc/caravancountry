@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 3.0//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.0" type="template" client="site">
+  <name>Regency Caravans</name>
+  <creationdate>05/05/2011</creationdate>
+  <author>Earthlink Design</author>
+  <authoremail>info@earthlinkdesign.com.au</authoremail>
+  <authorurl>http://www.earthlinkdesign.com.au</authorurl>
+  <copyright>Regency Caravans</copyright>
+  <license>GNU/GPL</license>
+  <version>1.0.0</version>
+  <description>Regency Caravans, Joomla 1.5 custom template</description>
+  <files>
+    <filename>index.php</filename>
+    <filename>template_preview.png</filename>
+    <filename>template_thumbnail.png</filename>
+    <filename>v15_templateDetails.xml</filename>
+    <folder>css</folder>
+    <folder>images</folder>
+  </files>
+  <positions><position>Top-Title</position><position>Top-Menu</position><position>Top-Banner</position><position>Top-Menu</position><position>Top-Featured</position><position>Footer-Bottom</position></positions>
+  <config>
+    <fields name="params">
+      <fieldset name="advanced">
+        <field>parameter</field>
+      </fieldset>
+    </fields>
+  </config>
+</extension>

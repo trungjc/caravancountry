@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Tags">
+		<message>
+			<![CDATA[This layout will display the list of items associated with the selected tag.]]>
+		</message>
+	</layout>
+	<state>
+		<name>Tags</name>
+		<description>This layout will display the list of items associated with the selected tag.</description>
+		<url addfieldpath="/administrator/components/com_mijosef/library/elements">
+			<param name="tag" type="tags" size="6" default="" label="Select Tag" description="Select any tag to display or leave empty for all tags." />
+		</url>
+	</state>
+	
+	<!-- Add fields to the parameters object for the layout. -->
+	<fields name="request">
+		<!-- Basic options. -->
+		<fieldset name="request" label="Tag" addfieldpath="/administrator/components/com_mijosef/library/elements">
+            <field name="tag" type="tags" size="6" default="" label="Select Tag" description="Select any tag to display or leave empty for all tags." />
+        </fieldset>
+    </fields>
+</metadata>

@@ -1,0 +1,14 @@
+.twoj_formEditItem .adminform,
+#twoj_formEditElement .adminform{
+	background-color: white;
+}
+
+.twojmultivalues .twojmultivalues_line{
+	margin-top: 2px;
+}
+.ui-widget { font-size: 1em; }
+.ui-widget .ui-widget { font-size: 1em; }
+
+#twojtoolbox_elementmenu_selectcatid label{
+	margin-top: 2px;
+}

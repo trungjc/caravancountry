@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Sitemap">
+		<message>
+			<![CDATA[This layout will display the HTML view of Sitemap.]]>
+		</message>
+	</layout>
+    <!-- Add fields to the parameters object for the layout. -->
+	<fields name="params">
+		<!-- Basic options. -->
+		<fieldset name="basic" label="Sitemap" addfieldpath="/administrator/components/com_mijosef/library/elements">
+            <field name="components" type="componentlist" default="all" multiple="multiple" label="Components" />
+            <field name="display_num" type="list" default="50" label="Items per page" description="Number of Items to display per page.">
+				<option value="10">10</option>
+				<option value="20">20</option>
+				<option value="30">30</option>
+				<option value="50">50</option>
+				<option value="100">100</option>
+				<option value="500">500</option>
+				<option value="1000">1000</option>
+				<option value="0">All</option>
+			</field>
+        </fieldset>
+    </fields>
+</metadata>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="mijosef_ext" version="1.5.0" method="upgrade">
+	<name>Tags</name>
+	<author>Mijosoft LLC</author>
+    <creationDate>May 2013</creationDate>
+    <copyright>(C) 2009-2013 Mijosoft LLC</copyright>
+	<license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>info@mijosoft.com</authorEmail>
+	<authorUrl>mijosoft.com</authorUrl>
+	<version>1.3.0</version>
+	<description>Tags extension for MijoSEF.</description>
+	
+	<files>
+		<filename mijosef_ext="com_tags">com_tags.php</filename>
+	</files>
+
+    <install>
+        <defaultParams>
+            <defaultParam name="non_sef_vars" value="types" />
+        </defaultParams>
+    </install>
+
+	<config>
+		<fields name="params">
+			<fieldset name="url">
+				<field name="tag_part" type="list" default="global" label="Tag URL part" description="Tag URL part">
+					<option value="global">Use Global</option>
+					<option value="title">COM_MIJOSEF_COMMON_TITLE_FIELD</option>
+					<option value="alias">COM_MIJOSEF_COMMON_ALIAS_FIELD</option>
+				</field>
+				<field type="spacer" hr="true" />
+                <param name="tag_inc" type="list" default="3" label="Add tag to URL" description="Control the way tags are added to URL.">
+                    <option value="1">No</option>
+                    <option value="2">COM_MIJOSEF_PARAMS_URL_CATEGORY_LAST</option>
+                    <option value="3">All tags</option>
+                </param>
+				<field name="tagid_inc" type="radio" class="btn-group" default="1" label="Add tag ID" description="If set to Yes, tag ID will be prepended to tag name.">
+					<option value="1">No</option>
+					<option value="2">Yes</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</install>
