@@ -2,8 +2,8 @@
 <extension version="3.0" type="module" method="upgrade">
 	<name>MOD_CACHECLEANER</name>
 	<description>MOD_CACHECLEANER_DESC</description>
-	<version>3.3.2FREE</version>
-	<creationDate>February 2014</creationDate>
+	<version>3.3.4FREE</version>
+	<creationDate>March 2014</creationDate>
 	<author>NoNumber (Peter van Westen)</author>
 	<authorEmail>peter@nonumber.nl</authorEmail>
 	<authorUrl>http://www.nonumber.nl</authorUrl>
@@ -23,7 +23,7 @@
 			<fieldset name="description">
 				<field name="@loadlanguage" type="nn_loadlanguage" extension="mod_cachecleaner" admin="1" />
 				<field name="@license" type="nn_license" extension="CACHE_CLEANER" />
-				<field name="@version" type="nn_version" extension="CACHE_CLEANER" xml="administrator/modules/mod_cachecleaner/mod_cachecleaner.xml" />
+				<field name="@version" type="nn_version" extension="CACHE_CLEANER" />
 				<field name="@dependency" type="nn_dependency"
 					label="CC_THE_SYSTEM_PLUGIN"
 					file="/plugins/system/cachecleaner/cachecleaner.php" />

@@ -2,7 +2,7 @@
  * Main JavaScript file
  *
  * @package         Cache Cleaner
- * @version         3.3.2
+ * @version         3.3.4
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl

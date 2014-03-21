@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+        <name>System - Admin Branding Reloaded</name>
+        <author>Sabuj Kundu</author>
+        <creationDate>10.10.2012</creationDate>
+        <copyright>Copyright (C) 2011 codeboxr.com. All rights reserved.</copyright>
+        <license>http://www.gnu.org/licenseses/gpl-2.0.html GNU/GPL</license>
+        <authorEmail>sabuj@codeboxr.com</authorEmail>
+        <authorUrl>http://codeboxr.com</authorUrl>
+        <version>1.5</version>
+        <description>Admin Branding for Joomla3.0.</description>
+        <files>
+                <filename plugin="adminbrandingreloaded">adminbrandingreloaded.php</filename>
+                <filename>index.html</filename>               	
+        </files>
+        
+        <config>
+            <fields name="params">
+                <fieldset name="basic" label="Basic Setting">                                                            
+                    <field name="hidelogo"  type="radio"  class="btn-group"  default="0" label="Hide Joomla Logo" description="Display Joomla logo">
+                            <option value="0">JNO</option>
+                            <option value="1">JYES</option>
+                    </field>
+                    <field name="showslogo" type="radio"  class="btn-group"  default="0" label="Show Custom Logo" description="Display custom site logo in place of joomla logo">
+                            <option value="0">JNO</option>
+                            <option value="1">JYES</option>
+                    </field>
+                    <field name="customlogo" type="media" default="" label="Custom Logo" description="Select custom image, standard size is max height px" />
+                    <field name="customlogow" type="text" default="143" label="Custom Logo Width" description="Custom logo image width" />
+                    <field name="customlogoh" type="text" default="30" label="Custom Logo Height" description="Custom logo image height" />
+                    <field name="headerheight" type="text" default="36" label="Header Height(J3.2+ Only)" description="Custom header height, if you use custom logo higher then increase header height as need." />
+                    
+                    <field name="usebrandlogo" type="radio"  class="btn-group"  default="0" label="Use Brand Logo" description="Use small horizontal brand logo at top left corner site name">
+                            <option value="0">JNO</option>
+                            <option value="1">JYES</option>
+                    </field>
+                    <field name="brandlogo" type="media" default="" label="Brand Logo" description="Browse image. For best use please set horizontal image with height near 20px" />                    
+                    <field name="brandlogow" type="text" default="" label="Brand Logo Width" description="Custom brand logo width, standard 150px" />                    
+                    <field name="brandlogoh" type="text" default="20" label="Brand Logo Height" description="Custom brand logo height, standard 20px" />                    
+                    <field name="headrchnge" type="radio"  class="btn-group"  default="0" label="Change Header Bakcground" description="Change Header Background Color">
+                            <option value="0">JNO</option>
+                            <option value="1">JYES</option>
+                    </field>
+                    <field name="headerbg" type="color" default="#184A7D" label="Header Background Color" description="Header Background Color" /> 
+                    <field name="headrgrad" type="radio"  class="btn-group"  default="0" label="Use Header Gradient" description="Use Header Gradient">
+                            <option value="0">JNO</option>
+                            <option value="1">JYES</option>
+                    </field>
+                    <field name="headergradstart" type="color" default="#17568c" label="Header Background Start Color" description="Header Background Start Color" />                    
+                    <field name="headergradend" type="color" default="#1a3867" label="Header Background End Color" description="Header Background End Color" />                    
+                    <field name="titleleftmargin" type="text" default="0" label="Header Title Left Margin" description="Left margin for header title" />                    
+                </fieldset>
+                <fieldset name="loginsection" label="Login Page Branding">                                        
+                    <field name="showcllogo" type="radio"  class="btn-group"  default="0" label="Custom Login Logo" description="Show/hide the custom login logo">
+                            <option value="0">JNO</option>
+                            <option value="1">JYES</option>
+                    </field>
+                    <field name="customlogologin" type="media" default="" label="Custom Login Logo" description="Put logo in images folder and this will replace the default joomla logo" />
+                    <field name="customlogologinh" type="text" default="75" label="Login Logo Height" description="Height of your custom login logo" />
+                    <field name="lfootericon" type="radio"  class="btn-group"  default="1" label="Disable Footer Joomla Icon" description="Disable footer Joomla icon">
+                            <option value="0">JNO</option>
+                            <option value="1">JYES</option>
+                    </field>                    
+                    <field name="lbodycolor" type="radio"  class="btn-group"  default="0" label="Change Background Color" description="Change body background color">
+                            <option value="0">JNO</option>
+                            <option value="1">JYES</option>
+                    </field>
+                    <field name="lbodycolorval" type="color" default="#E0DEDF" class="inputbox" label="Body Background Color" description="Hex code for body background color" />
+                    <field name="lbodyimage" type="radio"  class="btn-group"  default="0" label="Set Background Image" description="Change body background image">
+                            <option value="0">JNO</option>
+                            <option value="1">JYES</option>
+                    </field>
+                    <field name="lbodyimageval" type="media" default="" label="Background Image" description="Choose background image" />
+                    <field name="lbodyimagetile" type="radio"  class="btn-group"  default="1" label="Tile Background Image" description="Tile body background image">
+                            <option value="0">JNO</option>
+                            <option value="1">JYES</option>
+                    </field>
+                    <field name="lbodyimageposx" type="radio"  class="btn-group"  default="center" label="Image Horizontal Position" description="Body background image horizontal position if tile is disabled">
+                            <option value="left">Left</option>
+                            <option value="center">Center</option>
+                            <option value="right">Right</option>
+                    </field>
+                       <field name="lbodyimageposy" type="radio"  class="btn-group"  default="center" label="Image Vertical Position" description="Body background image horizontal position if tile is disabled">
+                            <option value="top">Top</option>
+                            <option value="center">Center</option>
+                            <option value="bottom">Bottom</option>
+                    </field>                                                          
+                </fieldset>    
+                <!--fieldset name="footersection" label="Footer Branding">
+                    <field name="showfooter" type="radio"  class="btn-group"  default="1" label="Login Page Footer text" description="Display the footer text">
+                            <option value="0">JNO</option>
+                            <option value="1">JYES</option>
+                    </field>
+                </fieldset-->
+            </fields>
+        </config>
+</extension>

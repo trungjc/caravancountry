@@ -2,7 +2,7 @@
  * Main stylesheet
  *
  * @package         NoNumber Framework
- * @version         14.2.10
+ * @version         14.3.6
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -13,7 +13,7 @@
  * Stylesheet for font faces
  *
  * @package         NoNumber Framework
- * @version         14.2.10
+ * @version         14.3.6
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -375,4 +375,20 @@ div.nn_well h4 {
 }
 .chzn-small {
   width: 120px;
+}
+div.chzn-container[id^="color_"][id$="_chzn"],
+div.chzn-container#advancedparams_color_chzn {
+  display: none;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
 }

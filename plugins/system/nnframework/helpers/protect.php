@@ -3,7 +3,7 @@
  * NoNumber Framework Helper File: Protect
  *
  * @package         NoNumber Framework
- * @version         14.2.10
+ * @version         14.3.6
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -68,12 +68,12 @@ class NNProtect
 
 		$task = JFactory::getApplication()->input->get('task');
 		$view = JFactory::getApplication()->input->get('view');
-		if (!(strpos($task, '.') === false))
+		if (strpos($task, '.') !== false)
 		{
 			$task = explode('.', $task);
 			$task = array_pop($task);
 		}
-		if (!(strpos($view, '.') === false))
+		if (strpos($view, '.') !== false)
 		{
 			$view = explode('.', $view);
 			$view = array_pop($view);
@@ -277,7 +277,7 @@ class NNProtect
 				$pass = 0;
 				foreach ($tags as $tag)
 				{
-					if (!(strpos($s, $tag) === false))
+					if (strpos($s, $tag) !== false)
 					{
 						$pass = 1;
 						break;

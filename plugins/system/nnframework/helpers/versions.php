@@ -3,7 +3,7 @@
  * NoNumber Framework Helper File: VersionCheck
  *
  * @package         NoNumber Framework
- * @version         14.2.10
+ * @version         14.3.6
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -118,12 +118,12 @@ class NoNumberVersions
 
 		if ($version)
 		{
-			if (!(strpos($version, 'PRO') === false))
+			if (strpos($version, 'PRO') !== false)
 			{
 				$version = str_replace('PRO', '', $version);
 				$version .= ' <small>[PRO]</small>';
 			}
-			else if (!(strpos($version, 'FREE') === false))
+			else if (strpos($version, 'FREE') !== false)
 			{
 				$version = str_replace('FREE', '', $version);
 				$version .= ' <small>[FREE]</small>';

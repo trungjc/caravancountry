@@ -3,7 +3,7 @@
  * NoNumber Framework Helper File: Assignments
  *
  * @package         NoNumber Framework
- * @version         14.2.10
+ * @version         14.3.6
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -217,7 +217,7 @@ class NNFrameworkAssignmentsHelper
 	{
 		$this->getAssignmentState($params->assignment);
 		$params->id = $type;
-		if (!(strpos($type, '_') === false))
+		if (strpos($type, '_') !== false)
 		{
 			$type = explode('_', $type, 2);
 			$params->maintype = $type['0'];

@@ -3,7 +3,7 @@
  * Module Helper File
  *
  * @package         Cache Cleaner
- * @version         3.3.2
+ * @version         3.3.4
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -30,12 +30,7 @@ class modCacheCleaner
 		}
 
 		// load the admin language file
-		$lang = JFactory::getLanguage();
-		if ($lang->getTag() != 'en-GB') {
-			// Loads English language file as fallback (for undefined stuff in other language file)
-			$lang->load('mod_cachecleaner', JPATH_ADMINISTRATOR, 'en-GB');
-		}
-		$lang->load('mod_cachecleaner', JPATH_ADMINISTRATOR, null, 1);
+		JFactory::getLanguage()->load('mod_cachecleaner', JPATH_ADMINISTRATOR);
 
 		require_once JPATH_PLUGINS . '/system/nnframework/helpers/versions.php';
 

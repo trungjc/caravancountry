@@ -3,7 +3,7 @@
  * NoNumber Framework Helper File: Assignments: IPs
  *
  * @package         NoNumber Framework
- * @version         14.2.10
+ * @version         14.3.6
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -31,7 +31,7 @@ class NNFrameworkAssignmentsIPs
 			{
 				continue;
 			}
-			if (!(strpos($range, '-') === false))
+			if (strpos($range, '-') !== false)
 			{
 				// Selection is a range
 				// check if ip is between or equal to the from and to ip range

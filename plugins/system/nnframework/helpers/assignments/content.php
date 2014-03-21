@@ -3,7 +3,7 @@
  * NoNumber Framework Helper File: Assignments: Content
  *
  * @package         NoNumber Framework
- * @version         14.2.10
+ * @version         14.3.6
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -174,7 +174,7 @@ class NNFrameworkAssignmentsContent
 
 		if ($selection && !is_array($selection))
 		{
-			if (!(strpos($selection, '|') === false))
+			if (strpos($selection, '|') !== false)
 			{
 				$selection = explode('|', $selection);
 			}

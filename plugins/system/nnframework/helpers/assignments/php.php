@@ -3,7 +3,7 @@
  * NoNumber Framework Helper File: Assignments: PHP
  *
  * @package         NoNumber Framework
- * @version         14.2.10
+ * @version         14.3.6
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -39,7 +39,7 @@ class NNFrameworkAssignmentsPHP
 				break;
 			}
 
-			if (!$article && !(strpos($php, '$article') === false) && $parent->params->option == 'com_content' && $parent->params->view == 'article')
+			if (!$article && strpos($php, '$article') !== false && $parent->params->option == 'com_content' && $parent->params->view == 'article')
 			{
 				require_once JPATH_SITE . '/components/com_content/models/article.php';
 				$model = JModelLegacy::getInstance('article', 'contentModel');

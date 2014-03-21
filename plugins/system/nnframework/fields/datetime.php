@@ -4,7 +4,7 @@
  * Element to display the date and time
  *
  * @package         NoNumber Framework
- * @version         14.2.10
+ * @version         14.3.6
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -38,7 +38,7 @@ class JFormFieldNN_DateTime extends JFormField
 
 		if ($format)
 		{
-			if (!(strpos($format, '%') === false))
+			if (strpos($format, '%') !== false)
 			{
 				require_once JPATH_PLUGINS . '/system/nnframework/helpers/text.php';
 				$format = NNText::dateToDateFormat($format);

@@ -4,7 +4,7 @@
  * Displays a title with a bunch of extras, like: description, image, versioncheck
  *
  * @package         NoNumber Framework
- * @version         14.2.10
+ * @version         14.3.6
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -85,12 +85,12 @@ class JFormFieldNN_Header extends JFormField
 			}
 			if ($version)
 			{
-				if (!(strpos($version, 'PRO') === false))
+				if (strpos($version, 'PRO') !== false)
 				{
 					$version = str_replace('PRO', '', $version);
 					$version .= ' <small style="color:green">[PRO]</small>';
 				}
-				else if (!(strpos($version, 'FREE') === false))
+				else if (strpos($version, 'FREE') !== false)
 				{
 					$version = str_replace('FREE', '', $version);
 					$version .= ' <small style="color:green">[FREE]</small>';

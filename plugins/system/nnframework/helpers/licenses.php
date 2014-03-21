@@ -3,7 +3,7 @@
  * NoNumber Framework Helper File: Licenses
  *
  * @package         NoNumber Framework
- * @version         14.2.10
+ * @version         14.3.6
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -173,11 +173,11 @@ class NoNumberLicenses
 			$xml = JApplicationHelper::parseXMLInstallFile($file);
 			if ($xml && isset($xml['version']))
 			{
-				if (!(stripos($xml['version'], 'FREE') === false))
+				if (stripos($xml['version'], 'FREE') !== false)
 				{
 					$type = 'free';
 				}
-				else if (!(stripos($xml['version'], 'PRO') === false))
+				else if (stripos($xml['version'], 'PRO') !== false)
 				{
 					$type = 'pro';
 				}

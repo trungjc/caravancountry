@@ -2,8 +2,8 @@
 <extension version="3.0" type="plugin" group="system" method="upgrade">
 	<name>PLG_SYSTEM_CACHECLEANER</name>
 	<description>PLG_SYSTEM_CACHECLEANER_DESC</description>
-	<version>3.3.2FREE</version>
-	<creationDate>February 2014</creationDate>
+	<version>3.3.4FREE</version>
+	<creationDate>March 2014</creationDate>
 	<author>NoNumber (Peter van Westen)</author>
 	<authorEmail>peter@nonumber.nl</authorEmail>
 	<authorUrl>http://www.nonumber.nl</authorUrl>
@@ -26,7 +26,7 @@
 				<field name="@loadlanguage_mod" type="nn_loadlanguage" extension="mod_cachecleaner" />
 				<field name="@loadlanguage_plg" type="nn_loadlanguage" extension="plg_system_cachecleaner" />
 				<field name="@license" type="nn_license" extension="CACHE_CLEANER" />
-				<field name="@version" type="nn_version" extension="CACHE_CLEANER" xml="/plugins/system/cachecleaner/cachecleaner.xml" />
+				<field name="@version" type="nn_version" extension="CACHE_CLEANER" />
 				<field name="@dependency" type="nn_dependency"
 					label="CC_THE_MODULE"
 					file="/administrator/modules/mod_cachecleaner/mod_cachecleaner.php" />

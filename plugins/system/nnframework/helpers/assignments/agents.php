@@ -3,7 +3,7 @@
  * NoNumber Framework Helper File: Assignments: Agents
  *
  * @package         NoNumber Framework
- * @version         14.2.10
+ * @version         14.3.6
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -32,11 +32,11 @@ class NNFrameworkAssignmentsAgents
 			jimport('joomla.environment.browser');
 			$browser = JBrowser::getInstance();
 			$a = $browser->getAgentString();
-			if (!(stripos($a, 'Chrome') === false))
+			if (stripos($a, 'Chrome') !== false)
 			{
 				$a = preg_replace('#(Chrome/.*)Safari/[0-9\.]*#is', '\1', $a);
 			}
-			else if (!(stripos($a, 'Opera') === false))
+			else if (stripos($a, 'Opera') !== false)
 			{
 				$a = preg_replace('#(Opera/.*)Version/#is', '\1Opera/', $a);
 			}

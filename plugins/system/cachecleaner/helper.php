@@ -3,7 +3,7 @@
  * Plugin Helper File
  *
  * @package         Cache Cleaner
- * @version         3.3.2
+ * @version         3.3.4
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -25,10 +25,13 @@ class plgSystemCacheCleanerHelper
 
 		list($final_state, $msg, $error) = $this->cleanCache($params, $type, $show_size);
 
-		if (JFactory::getApplication()->input->getInt('break')) {
+		if (JFactory::getApplication()->input->getInt('break'))
+		{
 			echo ($final_state ? '+' : '') . $msg;
 			die;
-		} else if ($show_msg) {
+		}
+		else if ($show_msg)
+		{
 			JFactory::getApplication()->enqueueMessage($msg, ($error ? 'error' : 'message'));
 		}
 	}
@@ -39,11 +42,14 @@ class plgSystemCacheCleanerHelper
 		jimport('joomla.filesystem.file');
 
 		$ignore_folders = array();
-		if (!empty($params->ignore_folders)) {
+		if (!empty($params->ignore_folders))
+		{
 			$ignore_folders = explode("\n", str_replace('\n', "\n", $params->ignore_folders));
-			foreach ($ignore_folders as $i => $folder) {
-				if (trim($folder)) {
-					$folder = str_replace('\\', '/', trim($folder));
+			foreach ($ignore_folders as $i => $folder)
+			{
+				if (trim($folder))
+				{
+					$folder = rtrim(str_replace('\\', '/', trim($folder)), '/');
 					$folder = str_replace('//', '/', JPATH_SITE . '/' . $folder);
 					$ignore_folders[$i] = $folder;
 				}
@@ -55,10 +61,12 @@ class plgSystemCacheCleanerHelper
 
 		// remove all folders and files in cache folder
 		$paths = array(JPATH_SITE, JPATH_ADMINISTRATOR);
-		foreach ($paths as $path) {
+		foreach ($paths as $path)
+		{
 			$path .= '/cache';
 			list($final_state, $s) = $this->emptyFolder($path, $show_size, $ignore_folders);
-			if ($show_size) {
+			if ($show_size)
+			{
 				$size += $s;
 			}
 		}
@@ -67,37 +75,49 @@ class plgSystemCacheCleanerHelper
 		// Folders
 		if ($type == 'clean'
 			|| ($type == 'save' && $params->auto_save_folders)
-		) {
+		)
+		{
 			// Empty tmp folder
-			if ($params->clean_tmp) {
+			if ($params->clean_tmp)
+			{
 				$path = JPATH_SITE . '/tmp';
 				list($final_state, $s) = $this->emptyFolder($path, $show_size, $ignore_folders);
-				if ($show_size) {
+				if ($show_size)
+				{
 					$size += $s;
 				}
 			}
 		}
 
 
-		if ($params->purge) {
+		if ($params->purge)
+		{
 			$this->purgeCache($params);
 		}
-		if ($params->purge_updates) {
+		if ($params->purge_updates)
+		{
 			$this->purgeUpdateCache();
 		}
 
 		$error = 0;
-		if (!$final_state) {
+		if (!$final_state)
+		{
 			$msg = JText::_('CC_NOT_ALL_CACHE_COULD_BE_REMOVED');
 			$error = 1;
-		} else {
+		}
+		else
+		{
 			$msg = JText::_('CC_CACHE_CLEANED');
 		}
 
-		if ($show_size && $size) {
-			if ($size >= 1048576) {
+		if ($show_size && $size)
+		{
+			if ($size >= 1048576)
+			{
 				$size = (round($size / 1048576 * 100) / 100) . 'MB';
-			} else {
+			}
+			else
+			{
 				$size = (round($size / 1024 * 100) / 100) . 'KB';
 			}
 			$msg .= ' (' . $size . ')';
@@ -121,28 +141,47 @@ class plgSystemCacheCleanerHelper
 		$success = 1;
 		$size = 0;
 
-		if (JFolder::exists($path)) {
-			if ($show_size) {
+		if (JFolder::exists($path))
+		{
+			if ($show_size)
+			{
 				$size = $this->getFolderSize($path);
 			}
+
 			// remove folders
 			$folders = JFolder::folders($path);
-			foreach ($folders as $folder) {
-				if (!in_array($path . '/' . $folder, $ignore_folders) && @opendir($path . '/' . $folder)) {
-					$success = JFolder::delete($path . '/' . $folder);
-					if ($success && $folder == 'com_zoo') {
-						JFolder::create($path . '/' . $folder);
+			foreach ($folders as $folder)
+			{
+				$f = $path . '/' . $folder;
+				if (!in_array($f, $ignore_folders) && @opendir($path . '/' . $folder))
+				{
+					if ($this->isIgnoredParent($f, $ignore_folders))
+					{
+						$this->emptyFolder($f, 0, $ignore_folders);
+					}
+					else
+					{
+						$success = JFolder::delete($path . '/' . $folder);
+						if ($success && $folder == 'com_zoo')
+						{
+							JFolder::create($path . '/' . $folder);
+						}
 					}
 				}
 			}
+
 			// remove files
 			$files = JFolder::files($path);
-			foreach ($files as $file) {
-				if ($file != 'index.html' && !in_array($path . '/' . $file, $ignore_folders)) {
+			foreach ($files as $file)
+			{
+				if ($file != 'index.html' && !in_array($path . '/' . $file, $ignore_folders))
+				{
 					$success = JFile::delete($path . '/' . $file);
 				}
 			}
-			if ($show_size) {
+
+			if ($show_size)
+			{
 				$size -= $this->getFolderSize($path);
 			}
 		}
@@ -150,25 +189,48 @@ class plgSystemCacheCleanerHelper
 		return array($success, $size);
 	}
 
+	/*
+	 * Check if folder is a parent path of something in the ignore list
+	 */
+	function isIgnoredParent($path, $ignore_folders)
+	{
+		$check = $path . '/';
+		$len = strlen($check);
+		foreach ($ignore_folders as $ignore_folder)
+		{
+			if (substr($ignore_folder, 0, $len) == $check)
+			{
+				return 1;
+			}
+		}
+
+		return 0;
+	}
+
 	function getFolderSize($path)
 	{
 		jimport('joomla.filesystem.file');
 
-		if (JFile::exists($path)) {
+		if (JFile::exists($path))
+		{
 			return @filesize($path);
 		}
 
 		jimport('joomla.filesystem.folder');
-		if (!JFolder::exists($path) || !(@opendir($path))) {
+		if (!JFolder::exists($path) || !(@opendir($path)))
+		{
 			return 0;
 		}
 
 		$size = 0;
-		foreach (JFolder::files($path) as $file) {
+		foreach (JFolder::files($path) as $file)
+		{
 			$size += @filesize($path . '/' . $file);
 		}
-		foreach (JFolder::folders($path) as $folder) {
-			if (@opendir($path . '/' . $folder)) {
+		foreach (JFolder::folders($path) as $folder)
+		{
+			if (@opendir($path . '/' . $folder))
+			{
 				$size += $this->getFolderSize($path . '/' . $folder);
 			}
 		}
@@ -180,7 +242,8 @@ class plgSystemCacheCleanerHelper
 	{
 		$db = JFactory::getDBO();
 		$db->setQuery('TRUNCATE TABLE #__updates');
-		if ($db->execute()) {
+		if ($db->execute())
+		{
 			// Reset the last update check timestamp
 			$query = $db->getQuery(true)
 				->update('#__update_sites')
