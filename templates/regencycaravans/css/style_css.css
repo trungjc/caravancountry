@@ -290,7 +290,7 @@ quote {
      background: url("../images/contentShadow1.png") no-repeat scroll center top transparent;
      float: left;
      margin: 3px 0px 0px;
-     padding: 39px 0px 49px;
+     padding: 29px 0px 49px;
      width: 100%;
 }
 
@@ -308,7 +308,7 @@ quote {
 }
 
 .plans ul li {
-     background: none repeat scroll 0% 0% #EAEAEA;
+     background: none repeat scroll 0% 0% #FFFFFF;
      float: left;
      margin: 13px 0px 0px 3.4%;
      width: 29.5%;
