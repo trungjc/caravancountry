@@ -19,7 +19,7 @@ class JConfig {
 	public $debug = '0';
 	public $debug_lang = '0';
 	public $display_offline_message = '1';
-	public $editor = 'tinymce';
+	public $editor = 'jce';
 	public $error_reporting = 'default';
 	public $feed_email = 'author';
 	public $feed_limit = '10';

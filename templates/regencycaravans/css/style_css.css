@@ -164,7 +164,7 @@ quote {
 /* End Initial Styling */
 
 #Top-Featured a { padding:5px; margin: 30px 12px; background:url(../images/white-trans-20.png) top left repeat; display:inline-block; }
-#Main-Content .rci { background:transparent url(../images/black-trans-70.png) top left repeat; padding:12px; display:block; float:right; margin:0px 0px 20px 20px; }
+#Main-Content .rci { background:transparent url(../images/black-trans-70.png) top left repeat; padding:12px; display:block; float:left; margin:0px 0px 20px 20px; }
 #Main-Content .lci { background:transparent url(../images/black-trans-70.png) top left repeat; padding:12px; display:block; float:left; margin:0px 20px 20px 0px; }
 
 #Rotator-Container { left: 10px; position: relative; top: 10px; margin:1px; width:938px; }
@@ -199,3 +199,157 @@ quote {
 #ChronoContact_ContactForm .submit:hover, #ChronoContact_ContactForm .submit:focus{ background:url(../images/submit-button-hover.png) top left no-repeat; }
 
 .page-header {display:none;}
+
+/*coronet rv styles */
+
+.externalfeaturesBlock {
+     float: left;
+     margin: -3px 0px 0px;
+     padding: 14px 0px 0px;
+     width: 100%;
+}
+
+.externalfeaturesBlock h6 {
+     color: #FFBA00;
+     display: block;
+     font: 16px/20px;
+	 font-family:Arial, Helvetica, sans-serif;
+	 font-size: 16px;
+     margin-bottom: -5px;
+}
+
+.detailsColum1 {
+     float: left;
+     padding: 24px 0px 0px;
+     width: 48.3%;
+}
+
+.detailsColum1 ul {
+     background: url("../images/border_bg3.gif") repeat-y scroll right top transparent;
+     clear: both;
+     overflow: hidden;
+     padding: 0px 0px 30px;
+}
+
+.detailsColum1 ul li strong {
+     color: #FFBA00;
+     float: left;
+     font: 16px/24px;
+	 font-family:Arial, Helvetica, sans-serif;
+}
+
+.detailsColum1 ul li em {
+     color: #000000;
+     float: left;
+     font: 16px/31px;
+	 font-family:Arial, Helvetica, sans-serif;
+     height: 20px;
+     text-align: center;
+     text-transform: uppercase;
+     width: 26px;
+}
+
+.detailsColum1 ul li cite {
+     float: right;
+}
+
+.detailsColum1 ul li span {
+     float: left;
+     margin-top: 6px;
+     width: 81%;
+}
+
+.detailsColum1 ul li small {
+     color: #000000;
+     float: left;
+     font: 16px/31px;
+	 font-family:Arial, Helvetica, sans-serif;
+     height: 20px;
+     margin: 0px 0px 0px 1px;
+     text-align: center;
+     text-transform: uppercase;
+     width: 26px;
+}
+
+.detailsColum1 ul li {
+     border-bottom: 1px solid #BBBBBB;
+     color: #ffffff;
+     float: left;
+     font: 11px/21px;
+	 font-family:Arial, Helvetica, sans-serif;
+     padding: 0px;
+     width: 100%;
+}
+
+.detailsColum2 {
+     float: right;
+     padding: 24px 13px 0px 0px;
+}
+
+.plans {
+     background: url("../images/contentShadow1.png") no-repeat scroll center top transparent;
+     float: left;
+     margin: 3px 0px 0px;
+     padding: 39px 0px 49px;
+     width: 100%;
+}
+
+.plans h3 {
+     color: #FFBA00;
+     display: block;
+     font: 30px/30px;
+	 font-family:Arial, Helvetica, sans-serif;
+     text-transform: uppercase;
+}
+
+.plans ul {
+     clear: both;
+     margin: 0px 0px 0px -2.8%;
+}
+
+.plans ul li {
+     background: none repeat scroll 0% 0% #EAEAEA;
+     float: left;
+     margin: 13px 0px 0px 3.4%;
+     width: 29.5%;
+}
+
+.plans ul li .figure {
+     display: block;
+     position: relative;
+}
+
+.plans ul li .figure img {
+     display: block;
+}
+
+.plans ul li .figure a {
+     background: url("../images/redTransparent_bg.png") repeat scroll 0% 0% transparent;
+     display: none;
+     height: 100%;
+     left: 0px;
+     position: absolute;
+     top: 0px;
+     width: 100%;
+}
+
+.plans ul li .figure a strong {
+     background: url("../images/searchIcon.png") no-repeat scroll left center transparent;
+     color: #FFFFFF;
+     font: 12px/20px;
+	 font-family:Arial, Helvetica, sans-serif;
+     margin: 15% 18%;
+     padding: 0px 0px 0px 18px;
+     position: absolute;
+     text-transform: uppercase;
+}
+
+.plans ul li .figure:hover a {
+     display: block;
+}
+
+.plans ul li span {
+     display: block;
+     padding: 2px 0px;
+     text-align: center;
+}
