@@ -1,0 +1,48 @@
+/*
+**************
+TO ADJUST THE MARGIN AND PADDING OF ANY IMAGES in the gallery html
+please see components/com_igallery/helpers/utility.php
+The margin and padding of the images are in percentages. These percentages are
+caculated in the php before the html is output.
+*****************
+*/
+
+/*MAIN GALLERY BORDER SHADOW BIT*/
+    .cat_child img{
+    display: block;
+    box-shadow: 1px 1px 0 #cccccc, -1px 1px 0 #cccccc, 1px -1px 0 #cccccc, -1px -1px 0 #cccccc;
+    }
+
+    div.main_large_image .large_img{
+    display: block;
+    box-shadow: inset 1px 1px 0 #cccccc,inset -1px 1px 0 #cccccc, inset 1px -1px 0 #cccccc, inset -1px -1px 0 #cccccc;
+    }
+	
+    table.main_thumb_table td img{
+    box-shadow: inset 1px 1px 0 #cccccc, inset -1px 1px 0 #cccccc, inset 1px -1px 0 #cccccc, inset -1px -1px 0 #cccccc, 4px 4px 4px rgba(202, 202, 202, 0.8);
+    border-collapse: separate;
+    }
+
+    .main_des_container{
+    background-color: rgba(230,230,230,0.2);
+    box-shadow: inset 1px 1px 0 #cccccc,inset -1px 1px 0 #cccccc, inset 1px -1px 0 #cccccc, inset -1px -1px 0 #cccccc;
+    }
+	
+
+/*LIGHTBOX GALLERY BORDER SHADOW BIT*/
+
+    div.lbox_large_image .large_img{
+    display: block;
+    box-shadow: inset 1px 1px 0 #cccccc,inset -1px 1px 0 #cccccc, inset 1px -1px 0 #cccccc, inset -1px -1px 0 #cccccc;
+    }
+	
+	table.lbox_thumb_table td img{
+    box-shadow: inset 1px 1px 0 #cccccc, inset -1px 1px 0 #cccccc, inset 1px -1px 0 #cccccc, inset -1px -1px 0 #cccccc, 4px 4px 4px rgba(202, 202, 202, 0.8);
+    border-collapse: separate;
+	}
+
+	.lbox_des_container{
+    background-color: rgba(230,230,230,0.2);
+    box-shadow: inset 1px 1px 0 #cccccc,inset -1px 1px 0 #cccccc, inset 1px -1px 0 #cccccc, inset -1px -1px 0 #cccccc;
+    }
+
