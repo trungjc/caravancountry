@@ -5,6 +5,101 @@
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
+	body {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	#Top-Container,
+	#Background-Container,
+	#Top-Featured,
+	#Content-Container,
+	#Main-Container,
+	#Main-Content,
+	#Footer-Container,
+	#Bottom-Container,
+	#Footer-Bottom,
+	#Top-Banner,
+	#Top-Title {
+		min-width: 100%;
+		width: auto;
+		height: auto;
+	}
+
+	#Footer-Bottom {
+		width: 100%;
+		overflow-x: auto;
+		overflow-y: hidden;
+	}
+
+	#Top-Featured a {
+		margin-left: 0;
+		margin-bottom: 0;
+	}
+
+	.moduletable {
+		width: 100%;
+		overflow-x: auto;
+	}
+
+	#Main-Content .rci {
+		float: none;
+		margin-left: 0;
+	}
+
+	#Main-Content .rci img{
+		width: 100%;
+		height: 100%;
+	}
+}
+
+@media (max-width: 767px) {
+	body {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	#Top-Container,
+	#Background-Container,
+	#Top-Featured,
+	#Content-Container,
+	#Main-Container,
+	#Main-Content,
+	#Footer-Container,
+	#Bottom-Container,
+	#Footer-Bottom,
+	#Top-Banner,
+	#Top-Title {
+		min-width: 100%;
+		width: auto;
+		height: auto;
+	}
+
+	#Footer-Bottom {
+		width: 100%;
+		overflow-x: auto;
+		overflow-y: hidden;
+	}
+
+	#Top-Featured a {
+		margin-left: 0;
+		margin-bottom: 0;
+	}
+
+	.moduletable {
+		width: 100%;
+		overflow-x: auto;
+	}
+
+	#Main-Content .rci {
+		float: none;
+		margin-left: 0;
+	}
+
+	#Main-Content .rci img{
+		width: 100%;
+		height: 100%;
+	}
 
 }
 
@@ -23,7 +118,9 @@
 	#Main-Content,
 	#Footer-Container,
 	#Bottom-Container,
-	#Footer-Bottom {
+	#Footer-Bottom,
+	#Top-Banner,
+	#Top-Title {
 		min-width: 100%;
 		width: auto;
 		height: auto;
