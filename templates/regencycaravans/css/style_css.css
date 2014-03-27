@@ -164,7 +164,7 @@ quote {
 /* End Initial Styling */
 
 #Top-Featured a { padding:5px; margin: 30px 12px; background:url(../images/white-trans-20.png) top left repeat; display:inline-block; }
-#Main-Content .rci { background:transparent url(../images/black-trans-70.png) top left repeat; padding:12px; display:block; float:left; margin:0px 0px 20px 20px; }
+#Main-Content .rci { background:transparent url(../images/black-trans-70.png) top left repeat; padding:12px; display:block; float:right; margin:0px 0px 20px 20px; }
 #Main-Content .lci { background:transparent url(../images/black-trans-70.png) top left repeat; padding:12px; display:block; float:left; margin:0px 20px 20px 0px; }
 
 #Rotator-Container { left: 10px; position: relative; top: 10px; margin:1px; width:938px; }
