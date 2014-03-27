@@ -141,6 +141,10 @@
 		left: 0 !important;
 	}
 
+	.item-page .rci + p a img {
+		margin: 10px 0 !important;
+	}
+
 
 
 }
@@ -230,6 +234,12 @@
 		top: 0 !important;
 		left: 0 !important;
 	}
+
+
+	.item-page .rci + p a img {
+		margin: 10px 0 !important;
+
+	} 
 
 
 
