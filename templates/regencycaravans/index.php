@@ -35,7 +35,7 @@ JPlugin::loadLanguage( 'tpl_SG1' ); ?>
 </head>
 <body>
 
-	<div class="menu-responsive">&#9776;</div>
+	
 <div id="Top-Container">
 	<div id="Background-Container">
 		<div id="Top-Background">
@@ -61,7 +61,7 @@ JPlugin::loadLanguage( 'tpl_SG1' ); ?>
 		<?php else: ?>
 			<?php if($this->countModules('Top-Menu')) : ?>
 				<div id="Top-Menu" class="menu">
-
+					<div class="menu-responsive">&#9776;</div>
 					<jdoc:include type="modules" name="Top-Menu" style="" />
 				</div>
 			<?php endif; ?>
