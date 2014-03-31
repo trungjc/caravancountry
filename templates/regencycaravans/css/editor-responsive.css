@@ -1,115 +1,41 @@
 /* WYSIWYG Selectable CSS */
 
-@media (min-width: 1200px) {
-	
+@media (min-width:1200px) {
 }
-
-@media (min-width: 768px) and (max-width: 979px) {
+@media (min-width:768px) and (max-width:979px) {
 	body {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
-
-	#Top-Container,
-	#Background-Container,
-	#Top-Featured,
-	#Content-Container,
-	#Main-Container,
-	#Main-Content,
-	#Footer-Container,
-	#Bottom-Container,
-	#Footer-Bottom,
-	#Top-Banner,
-	#Top-Title {
-		min-width: 100%;
-		width: auto;
-		height: auto;
-	}
-
-	#Footer-Bottom {
-		width: 100%;
-		overflow-x: auto;
-		overflow-y: hidden;
-	}
-
-	#Top-Featured a {
-		margin-left: 0;
-		margin-bottom: 0;
-	}
-
-	.moduletable {
-		width: 100%;
-		overflow-x: auto;
-	}
-
-	#Main-Content .rci {
-		float: none;
-		margin-left: 0;
-	}
-
-	#Main-Content .rci {
-		text-align: center;
-	}
-
-	.ddmx89 .item11.acton.last .item1 img.seq2, .ddmx89 .item11.acton .item1 img.seq2, .ddmx89 img.seq1 {
-		display: none!important;
-	
-	}
-#outertable90 table, #outertable90 tr, #outertable90 td, #menu90 table, #menu90 tr, #menu90 td {
-    
-}
-.ddmx89 a.item1:hover img.seq2, .ddmx89 a.item1-active img.seq2, .ddmx89 a.item1-active:hover img.seq2, .ddmx89 a.item2:hover img.seq2, .ddmx89 a.item2-active img.seq2, .ddmx89 a.item2-active:hover img.seq2{
-	display: none!important;
-}
-#menu89 td {
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2);
-    padding:0 20px;
-	height: 48px;
-}
-#menu89 td:hover{
-    background:  repeat scroll 0 0 rgba(255, 157, 0, 0.8);
-}
-#menu89 td  + td{
-    border-left: 1px solid #D9D9D9!important;
-}
-#outertable90 {width:100%;display: block;}
-	#menu89 td span {
-	display: block;
-	text-shadow:0 1px 2px rgba(0,0,0,0.4);
-	}
-	#menu89-0 ,#menu89-1{width: 118px;padding:0!important ;}
-	#menu89-2{width: 180px;padding:0!important ;}
-	.ddmx89 .section {top: 48px!important;padding: 10px 15px;}
-}
-
-@media (max-width: 767px) {
 	.menu-responsive {
 		display: block;
 		z-index: 999;
 		top: 0;
 	}
-	
-	.ddmx89 .item11.acton.last .item1 img.seq2, .ddmx89 .item11.acton .item1 img.seq2, .ddmx89 img.seq1 {
+	.ddmx89 .item11.acton.last .item1 img.seq2,
+	.ddmx89 .item11.acton .item1 img.seq2,
+	.ddmx89 img.seq1 {
 		display: none;
-	
 	}
-#outertable90 table, #outertable90 tr, #outertable90 td, #menu90 table, #menu90 tr, #menu90 td {
-    border: 0 none !important;
-    display: block;
-}
+	#outertable90 table,
+	#outertable90 tr,
+	#outertable90 td,
+	#menu90 table,
+	#menu90 tr,
+	#menu90 td {
+		border: 0 none !important;
+		display: block;
+	}
 	#menu89 td span {
-display: block;
-}
-
+		display: block;
+	}
 	#Content-Container {
 		z-index: 0;
 	}
-	
 	body {
 		padding-left: 0;
 		padding-right: 0;
 	}
-
 	#Top-Container,
 	#Background-Container,
 	#Top-Featured,
@@ -125,81 +51,129 @@ display: block;
 		width: auto;
 		height: auto;
 	}
-
 	#Footer-Bottom {
 		width: 100%;
 		overflow-x: auto;
 		overflow-y: hidden;
 	}
-
 	#Top-Featured a {
 		margin-left: 0;
 		margin-bottom: 0;
 	}
-
 	.moduletable {
 		width: 100%;
 		overflow-x: auto;
 	}
-
 	#Main-Content .rci {
 		float: none;
 		margin-left: 0;
 	}
-
 	#Main-Content .rci {
 		text-align: center;
 	}
-
-
 	.item-page,
 	.items-leading,
 	.detailsColum1,
 	.detailsColum2,
-	.plans ul li{
+	.plans ul li {
 		float: none;
 		padding: 0 10px;
 		margin: 10px 0;
 		width: auto;
 	}
-
-	#outertable89 table, 
-	#outertable89 tr, 
-	#outertable89 td, 
-	#menu89 table, 
-	#menu89 tr, 
+	#outertable89 table,
+	#outertable89 tr,
+	#outertable89 td,
+	#menu89 table,
+	#menu89 tr,
 	#menu89 td {
 		display: block;
 	}
-
 	.ddmx89 .section,
-	.ddmx89 a.item2, .ddmx89 a.item2:hover, .ddmx89 a.item2-active, .ddmx89 a.item2-active:hover {
+	.ddmx89 a.item2,
+	.ddmx89 a.item2:hover,
+	.ddmx89 a.item2-active,
+	.ddmx89 a.item2-active:hover {
 		position: static;
 		top: 0 !important;
 		left: 0 !important;
+		display: block;
+		visibility: visible;
+		text-align: left;
+	}
+	.ddmx89 a.item1:hover img.seq2,
+	.ddmx89 a.item1-active img.seq2,
+	.ddmx89 a.item1-active:hover img.seq2,
+	.ddmx89 a.item2:hover img.seq2,
+	.ddmx89 a.item2-active img.seq2,
+	.ddmx89 a.item2-active:hover img.seq2 {
+		display: none;
+	}
+	.ddmx89 a.item2-active,
+	.ddmx89 a.item2 {
+		background: transparent;
+	}
+	.ddmx89 .section a.item2:hover,
+	.ddmx89 a.item2-active,
+	.ddmx89 a.item2-active:hover {
+		background: transparent;
+		padding: 5px 0;
+	}
+	.ddmx89 a.item2,
+	.ddmx89 a.item2:hover,
+	.ddmx89 a.item2-active,
+	.ddmx89 a.item2-active:hover {
+		font-weight: normal;
+	}
+	.ddmx89 a.item2-active.first,
+	.ddmx89 a.item2.first {
+		border-radius: 0;
+		-webkit-border-radius: 0;
+	}
+	.ddmx89 a.item2,
+	.ddmx89 a.item2:hover,
+	.ddmx89 a.item2-active,
+	.ddmx89 a.item2-active:hover {
+		padding: 5px 0;
+	}
+	.ddmx89 .section a.item2:hover, .ddmx89 a.item2-active, .ddmx89 a.item2-active:hover {
+		color: #FFE70F !important;
 	}
 
-
-
+	.ddmx89 a.item1, .ddmx89 a.item1:hover, .ddmx89 a.item1-active, .ddmx89 a.item1-active:hover {
+		padding: 5px 0;
+	}
 }
-
-@media (max-width: 480px) {
-.item-page .MsoNormal+ p  img{margin:10px 0!important;display:block;}
+@media (max-width:767px) {
 	.menu-responsive {
 		display: block;
 		z-index: 999;
 		top: 0;
 	}
-
+	.ddmx89 .item11.acton.last .item1 img.seq2,
+	.ddmx89 .item11.acton .item1 img.seq2,
+	.ddmx89 img.seq1 {
+		display: none;
+	}
+	#outertable90 table,
+	#outertable90 tr,
+	#outertable90 td,
+	#menu90 table,
+	#menu90 tr,
+	#menu90 td {
+		border: 0 none !important;
+		display: block;
+	}
+	#menu89 td span {
+		display: block;
+	}
 	#Content-Container {
 		z-index: 0;
 	}
-	
 	body {
 		padding-left: 0;
 		padding-right: 0;
 	}
-
 	#Top-Container,
 	#Background-Container,
 	#Top-Featured,
@@ -215,58 +189,221 @@ display: block;
 		width: auto;
 		height: auto;
 	}
-
 	#Footer-Bottom {
 		width: 100%;
 		overflow-x: auto;
 		overflow-y: hidden;
 	}
-
 	#Top-Featured a {
 		margin-left: 0;
 		margin-bottom: 0;
 	}
-
 	.moduletable {
 		width: 100%;
 		overflow-x: auto;
 	}
-
 	#Main-Content .rci {
 		float: none;
 		margin-left: 0;
 	}
-#Main-Content .rci {
+	#Main-Content .rci {
 		text-align: center;
 	}
-
 	.item-page,
 	.items-leading,
 	.detailsColum1,
 	.detailsColum2,
-	.plans ul li{
+	.plans ul li {
 		float: none;
 		padding: 0 10px;
 		margin: 10px 0;
 		width: auto;
 	}
-
-	#outertable89 table, 
-	#outertable89 tr, 
-	#outertable89 td, 
-	#menu89 table, 
-	#menu89 tr, 
+	#outertable89 table,
+	#outertable89 tr,
+	#outertable89 td,
+	#menu89 table,
+	#menu89 tr,
 	#menu89 td {
 		display: block;
 	}
-
 	.ddmx89 .section,
-	.ddmx89 a.item2, .ddmx89 a.item2:hover, .ddmx89 a.item2-active, .ddmx89 a.item2-active:hover {
+	.ddmx89 a.item2,
+	.ddmx89 a.item2:hover,
+	.ddmx89 a.item2-active,
+	.ddmx89 a.item2-active:hover {
 		position: static;
 		top: 0 !important;
 		left: 0 !important;
+		display: block;
+		visibility: visible;
+		text-align: left;
+	}
+	.ddmx89 a.item1:hover img.seq2,
+	.ddmx89 a.item1-active img.seq2,
+	.ddmx89 a.item1-active:hover img.seq2,
+	.ddmx89 a.item2:hover img.seq2,
+	.ddmx89 a.item2-active img.seq2,
+	.ddmx89 a.item2-active:hover img.seq2 {
+		display: none;
+	}
+	.ddmx89 a.item2-active,
+	.ddmx89 a.item2 {
+		background: transparent;
+	}
+	.ddmx89 .section a.item2:hover,
+	.ddmx89 a.item2-active,
+	.ddmx89 a.item2-active:hover {
+		background: transparent;
+		padding: 5px 0;
+	}
+	.ddmx89 a.item2,
+	.ddmx89 a.item2:hover,
+	.ddmx89 a.item2-active,
+	.ddmx89 a.item2-active:hover {
+		font-weight: normal;
+	}
+	.ddmx89 a.item2-active.first,
+	.ddmx89 a.item2.first {
+		border-radius: 0;
+		-webkit-border-radius: 0;
+	}
+	.ddmx89 a.item2,
+	.ddmx89 a.item2:hover,
+	.ddmx89 a.item2-active,
+	.ddmx89 a.item2-active:hover {
+		padding: 5px 0;
+	}
+	.ddmx89 .section a.item2:hover, .ddmx89 a.item2-active, .ddmx89 a.item2-active:hover {
+		color: #FFE70F !important;
 	}
 
+	.ddmx89 a.item1, .ddmx89 a.item1:hover, .ddmx89 a.item1-active, .ddmx89 a.item1-active:hover {
+		padding: 5px 0;
+	}
+}
+@media (max-width:480px) {
+	.item-page .MsoNormal+ p  img {
+		margin: 10px 0 !important;
+		display: block;
+	}
+	.menu-responsive {
+		display: block;
+		z-index: 999;
+		top: 0;
+	}
+	#Content-Container {
+		z-index: 0;
+	}
+	body {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#Top-Container,
+	#Background-Container,
+	#Top-Featured,
+	#Content-Container,
+	#Main-Container,
+	#Main-Content,
+	#Footer-Container,
+	#Bottom-Container,
+	#Footer-Bottom,
+	#Top-Banner,
+	#Top-Title {
+		min-width: 100%;
+		width: auto;
+		height: auto;
+	}
+	#Footer-Bottom {
+		width: 100%;
+		overflow-x: auto;
+		overflow-y: hidden;
+	}
+	#Top-Featured a {
+		margin-left: 0;
+		margin-bottom: 0;
+	}
+	.moduletable {
+		width: 100%;
+		overflow-x: auto;
+	}
+	#Main-Content .rci {
+		float: none;
+		margin-left: 0;
+	}
+	#Main-Content .rci {
+		text-align: center;
+	}
+	.item-page,
+	.items-leading,
+	.detailsColum1,
+	.detailsColum2,
+	.plans ul li {
+		float: none;
+		padding: 0 10px;
+		margin: 10px 0;
+		width: auto;
+	}
+	#outertable89 table,
+	#outertable89 tr,
+	#outertable89 td,
+	#menu89 table,
+	#menu89 tr,
+	#menu89 td {
+		display: block;
+	}
+	.ddmx89 .section,
+	.ddmx89 a.item2,
+	.ddmx89 a.item2:hover,
+	.ddmx89 a.item2-active,
+	.ddmx89 a.item2-active:hover {
+		position: static;
+		top: 0 !important;
+		left: 0 !important;
+		display: block;
+		visibility: visible;
+		text-align: left;
+	}
+	.ddmx89 a.item1:hover img.seq2,
+	.ddmx89 a.item1-active img.seq2,
+	.ddmx89 a.item1-active:hover img.seq2,
+	.ddmx89 a.item2:hover img.seq2,
+	.ddmx89 a.item2-active img.seq2,
+	.ddmx89 a.item2-active:hover img.seq2 {
+		display: none;
+	}
+	.ddmx89 a.item2-active,
+	.ddmx89 a.item2 {
+		background: transparent;
+	}
+	.ddmx89 .section a.item2:hover,
+	.ddmx89 a.item2-active,
+	.ddmx89 a.item2-active:hover {
+		background: transparent;
+		padding: 5px 0;
+	}
+	.ddmx89 a.item2,
+	.ddmx89 a.item2:hover,
+	.ddmx89 a.item2-active,
+	.ddmx89 a.item2-active:hover {
+		font-weight: normal;
+	}
+	.ddmx89 a.item2-active.first,
+	.ddmx89 a.item2.first {
+		border-radius: 0;
+		-webkit-border-radius: 0;
+	}
+	.ddmx89 a.item2,
+	.ddmx89 a.item2:hover,
+	.ddmx89 a.item2-active,
+	.ddmx89 a.item2-active:hover {
+		padding: 5px 0;
+	}
+	.ddmx89 .section a.item2:hover, .ddmx89 a.item2-active, .ddmx89 a.item2-active:hover {
+		color: #FFE70F !important;
+	}
 
-
+	.ddmx89 a.item1, .ddmx89 a.item1:hover, .ddmx89 a.item1-active, .ddmx89 a.item1-active:hover {
+		padding: 5px 0;
+	}
 }
