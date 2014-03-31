@@ -353,3 +353,6 @@ quote {
      padding: 2px 0px;
      text-align: center;
 }
+#menu89 td span {
+display: none;
+}
