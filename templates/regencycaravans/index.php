@@ -46,8 +46,9 @@ JPlugin::loadLanguage( 'tpl_SG1' ); ?>
 			</div>
 		<?php endif; ?>
 		<?php if($this->countModules('Top-Banner')) : ?>
-			<div id="Container-MenuBanner">
+			<div id="Container-MenuBanner" style="position:relative">
 				<?php if($this->countModules('Top-Menu')) : ?>
+					<div class="menu-responsive">&#9776;</div>
 					<div id="Top-Menu">
 						<jdoc:include type="modules" name="Top-Menu" style="" />
 					</div>
@@ -93,7 +94,11 @@ JPlugin::loadLanguage( 'tpl_SG1' ); ?>
 	<div id="Main-Container">
 </div>
 <script type="text/javascript">
-
+	jQuery(document).ready(function(){
+	jQuery('.menu-responsive ').click(function(){
+		jQuery(this).toggleClass('active');
+	})
+});
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-19318810-2']);
   _gaq.push(['_trackPageview']);
