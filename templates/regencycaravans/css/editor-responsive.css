@@ -428,4 +428,10 @@
 	.ddmx89 a.item1, .ddmx89 a.item1:hover, .ddmx89 a.item1-active, .ddmx89 a.item1-active:hover {
 		padding: 5px 0;
 	}
+
+	#Main-Content .rci > img {
+		max-width: 100%;
+		width: auto !important;
+		height: auto !important;
+	}
 }
