@@ -13,13 +13,8 @@
 	.ddmx89 img.seq1 {
 		display: none;
 	}
-	.menu-responsive.active +  #Top-Menu ,.menu-responsive{
-		display: block;
-	}
-	#Top-Menu {
-		display: none;
-		position: static;
-	}
+	
+	
 	#outertable90 tr,
 	#outertable90 td,
 	#menu90 table,
@@ -146,7 +141,6 @@
 		padding: 5px 0;
 	}
 	#Top-Menu table {width: 100%;}
-	#Top-Menu  {padding: 20px;background: rgba(0,0,0,0.9);border-top: 1px solid rgba(255,255,255,0.6)}
 	.item11 .section {
     margin-left: 20px;
 }#menu89 > tbody {
@@ -154,11 +148,20 @@
 }
 #outertable89 td.item1 {padding: 2px 10px;}
 #outertable89 td  a,.section a {text-transform: uppercase;font-size: 14px;}
+.menu-responsive {display: block;}
+	#Top-Menu  .menu-responsive.active +   #outertable89 {
+		display: block;border-top: 1px solid rgba(225,225,225,0.8)
+	}
+	#Top-Menu  #outertable89{
+		display: none;padding: 20px;background: rgba(0,0,0,0.9);
+		transition: all 0.5s ease;
+	}
 }
 @media (max-width:767px) {
-		
+		img { max-width: 100%;}
+		.rci + p img {   display: block;
+    margin: 10px 0 !important;}
 	#Top-Menu table {width: 100%;}
-	#Top-Menu  {padding: 20px;background: rgba(0,0,0,0.9);border-top: 1px solid rgba(255,255,255,0.6)}
 	.item11 .section {
     margin-left: 20px;
 }#menu89 > tbody {
@@ -166,12 +169,13 @@
 }
 #outertable89 td.item1 {padding: 2px 10px;}
 #outertable89 td  a,.section a {text-transform: uppercase;font-size: 14px;}
-	.menu-responsive.active +  #Top-Menu ,.menu-responsive{
-		display: block;
+.menu-responsive {display: block;}
+	#Top-Menu  .menu-responsive.active +   #outertable89 {
+		display: block;border-top: 1px solid rgba(225,225,225,0.8)
 	}
-	#Top-Menu {
-		display: none;
-		position: static;
+	#Top-Menu  #outertable89{
+		display: none;padding: 20px;background: rgba(0,0,0,0.9);
+		transition: all 0.5s ease;
 	}
 	.ddmx89 .item11.acton.last .item1 img.seq2,
 	.ddmx89 .item11.acton .item1 img.seq2,

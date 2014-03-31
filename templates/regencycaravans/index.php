@@ -48,8 +48,9 @@ JPlugin::loadLanguage( 'tpl_SG1' ); ?>
 		<?php if($this->countModules('Top-Banner')) : ?>
 			<div id="Container-MenuBanner" style="position:relative">
 				<?php if($this->countModules('Top-Menu')) : ?>
-					<div class="menu-responsive">&#9776;</div>
+				
 					<div id="Top-Menu">
+						<div class="menu-responsive">&#9776;</div>
 						<jdoc:include type="modules" name="Top-Menu" style="" />
 					</div>
 				<?php endif; ?>
