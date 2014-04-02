@@ -79,7 +79,7 @@ JPlugin::loadLanguage( 'tpl_SG1' ); ?>
 </div>
 <div id="Content-Container">
 	<div id="Main-Container">
-		<div id="Main-Content">
+		<div id="Main-Content" class="clearfix">
 			<jdoc:include type="message" />
 			<jdoc:include type="component" />
 		</div>
