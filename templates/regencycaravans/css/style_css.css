@@ -356,3 +356,18 @@ quote {
 #menu89 td span {
 display: none;
 }
+
+.infor {float: right;font-size:24px;text-align: right;margin-top:10px;
+/*font-family:"Kozuka Gothic Pro",Arial,Helvetica,sans-serif;*/
+font-weight: normal;
+}
+.number {color:white;}
+.address-box {color:white;font-weight: normal;
+padding: 5px 40px 5px 0;
+background: url(../images/yellow-marker-top.png) no-repeat right center;
+/*font-family:"Kozuka Gothic Pro",Arial,Helvetica,sans-serif;*/
+font-size:14px;margin-top: 15px;}
+.address {color:white;/*font-family:"Kozuka Gothic Pro"*/;margin-top:4px;}
+.showroom {color:#ae8dd1;}
+.number span{color:#ffba00;}
+#Top-Title > div {overflow: hidden;}
